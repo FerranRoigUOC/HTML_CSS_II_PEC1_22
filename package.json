@@ -1,0 +1,20 @@
+{
+  "name": "my-project",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "latest",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2"
+  }
+}
