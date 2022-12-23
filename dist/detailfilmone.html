@@ -8,22 +8,33 @@
   </head>
   <body>
     <header>
-      <div class="margin_header"> 
-				<a href="/index.html" class="link_index"><h1>SAM</h1></a>
-				<nav>
-					<ul>
-						<li><a href="/presentacion.html"><strong>PRESENTACIÓN</strong></a></li>
-						<li><a href="/categoria.html"><strong>CATEGORÍA</strong></a></li>
-						<li><a href="/enlaces.html"><strong>ENLACES</strong></a></li>
-					</ul>
-				</nav>
-			</div>
+      <div class="margin_header">
+          <div class="header_container">
+            <a href="/index.html" class="link_index"><h1>SAM</h1></a>
+        <img class="lazyload logo" src="/logo_header.583f0604.png" alt="Logo">
+          </div>
+      <nav>
+        <ul>
+          <li><a href="/presentacion.html"><strong>PRESENTACIÓN</strong></a></li>
+          <li><a href="/categoria.html"><strong>CATEGORÍA</strong></a></li>
+          <li><a href="/enlaces.html"><strong>ENLACES</strong></a></li>
+        </ul>
+      </nav>
+    </div>
     </header>
 
     <main class="main">
       <h2>El Señor de los Anillos: la Comunidad del Anillo</h2>
       <div class="container_detail">
-        <img class="lazyload" src="/filmone.4efcb689.jpg" alt="Film one">
+        <picture>
+          <source media="(max-width: 767px)" sizes="(max-width: 349px) 100vw, 349px" srcset="/filmone_usyg4h_ar_1_1_c_fill_g_auto__c_scale_w_200.8e54d447.jpg 200w,/filmone_usyg4h_ar_1_1_c_fill_g_auto__c_scale_w_349.7031e58b.jpg 349w">
+          <img sizes="(max-width: 1550px) 40vw, 620px" srcset="/filmone_usyg4h_c_scale_w_308.dc7f0378.jpg 308w,/filmone_usyg4h_c_scale_w_564.f82c983b.jpg 564w,/filmone_usyg4h_c_scale_w_620.f498b084.jpg 620w" src="/filmone_usyg4h_c_scale_w_620.f498b084.jpg" alt="">
+        </picture>
+
+        <picture class="second_picture">
+        <img sizes="(max-width: 300px) 100vw, 300px" srcset="/film_one_2.0_khrqb2_c_scale_w_200.c37b300f.jpg 200w,/film_one_2.0_khrqb2_c_scale_w_300.1810d83a.jpg 300w" src="/film_one_2.0_khrqb2_c_scale_w_300.1810d83a.jpg" alt="">
+        </picture>
+        
         <div class="grid_detail">
           <p>La Comunidad del Anillo es el primero de los tres títulos que componen el gran libro El Señor de los Anillos. 
             Así como comentaba en una entrada anterior que el Hobbit era un libro de aventuras fácil de leer, 
@@ -49,15 +60,33 @@
             pero siempre tiene a Merry cerca para ayudarle a salir de los problemas.
           </p>
         </div>
+
+        <picture>
+          <source media="(max-width: 767px)" sizes="(max-width: 556px) 100vw, 556px" srcset="/frodo_sam_film_one_gac8a9_ar_1_1_c_fill_g_auto__c_scale_w_200.18f41dd9.jpg 200w,/frodo_sam_film_one_gac8a9_ar_1_1_c_fill_g_auto__c_scale_w_527.ae98f67e.jpg 527w,/frodo_sam_film_one_gac8a9_ar_1_1_c_fill_g_auto__c_scale_w_556.a85a854e.jpg 556w">
+          <img sizes="(max-width: 2475px) 40vw, 990px" srcset="/frodo_sam_film_one_gac8a9_c_scale_w_308.33ad64e4.jpg 308w,/frodo_sam_film_one_gac8a9_c_scale_w_679.337f97d5.jpg 679w,/frodo_sam_film_one_gac8a9_c_scale_w_976.6142e21e.jpg 976w,/frodo_sam_film_one_gac8a9_c_scale_w_990.47a2ad1a.jpg 990w" src="/frodo_sam_film_one_gac8a9_c_scale_w_990.47a2ad1a.jpg" alt="">
+        </picture>
       </div>
 
     </main>
 
     <footer>
+
+      <nav class="nav_horizontal">
+        <ul>
+          <li><a href="/presentacion.html"><strong>Presentación</strong></a></li>
+          <li><a href="/categoria.html"><strong>Categoría</strong></a></li>
+          <li><a href="/enlaces.html"><strong>Enlaces</strong></a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="/index.html" class="link_index"><img class="lazyload logo" src="/logo_footer.8f38c2bb.png" alt="Logo"></a>
+      </div>
+
       <p>
-        Actividad realizada por Ferran Roig Muñoz, para la asignatura
-        HTML y CSS II. Primer semestre del curso 2022-2023
+      Actividad realizada por Ferran Roig Muñoz, para la asignatura
+      HTML y CSS II. Primer semestre del curso 2022-2023
       </p>
+
     </footer>
 
     <script src="/detailfilmone.7d39383a.js" async=""></script>
