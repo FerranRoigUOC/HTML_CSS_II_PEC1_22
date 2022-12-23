@@ -7,24 +7,42 @@
   </head>
   <body>
     <header>
-      <div class="margin_header"> 
-				<a href="index.html" class="link_index"><h1>SAM</h1></a>
-				<nav>
-					<ul>
-						<li><a href="presentacion.html"><strong>PRESENTACIÓN</strong></a></li>
-						<li><a href="categoria.html"><strong>CATEGORÍA</strong></a></li>
-						<li><a href="enlaces.html"><strong>ENLACES</strong></a></li>
-					</ul>
-				</nav>
-			</div>
+      <div class="margin_header">
+          <div class="header_container">
+            <a href="index.html" class="link_index"><h1>SAM</h1></a>
+        <img class="lazyload logo" src="img/logo_header.png" alt="Logo">
+          </div>
+      <nav>
+        <ul>
+          <li><a href="presentacion.html"><strong>PRESENTACIÓN</strong></a></li>
+          <li><a href="categoria.html"><strong>CATEGORÍA</strong></a></li>
+          <li><a href="enlaces.html"><strong>ENLACES</strong></a></li>
+        </ul>
+      </nav>
+    </div>
     </header>
 
     <main class="main">
       <h2>El Señor de los Anillos: las dos torres</h2>
       <div class="container_detail">
-        <iframe frameborder="0"
-        class="lazyload"
-        allowfullscreen="" data-src="https://www.youtube.com/embed/yZLxtW7qq48"></iframe>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 569px) 100vw, 569px"
+            srcset="
+            img/sam_second_film_tvjqb3_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+            img/sam_second_film_tvjqb3_ar_1_1,c_fill,g_auto__c_scale,w_432.jpg 432w,
+            img/sam_second_film_tvjqb3_ar_1_1,c_fill,g_auto__c_scale,w_569.jpg 569w">
+          <img
+            sizes="(max-width: 2450px) 40vw, 980px"
+            srcset="
+            img/sam_second_film_tvjqb3_c_scale,w_308.jpg 308w,
+            img/sam_second_film_tvjqb3_c_scale,w_610.jpg 610w,
+            img/sam_second_film_tvjqb3_c_scale,w_854.jpg 854w,
+            img/sam_second_film_tvjqb3_c_scale,w_980.jpg 980w"
+            src="img/sam_second_film_tvjqb3_c_scale,w_980.jpg"
+            alt="">
+        </picture>
         <div class="grid_detail">
           <p>Tras internarse en Emyn Muil, Frodo Bolsón y <a href="presentacion.html">Sam Gamyi</a> se encuentran con la criatura Gollum, 
             que intenta quitarles el Anillo por la fuerza pero, al verse vencido, promete a los hobbits guiarlos hasta Mordor. 
@@ -59,15 +77,46 @@
             con su grito atrae de nuevo a todos los ents, que marchan hacia Isengard y la destruyen.
           </p>
         </div>
+        <picture>
+        <source
+        media="(max-width: 767px)"
+        sizes="(max-width: 512px) 100vw, 512px"
+        srcset="
+        img/second_film_2.0_u4nwr7_ar_1_1,c_fill,g_auto__c_scale,w_200.webp 200w,
+        img/second_film_2.0_u4nwr7_ar_1_1,c_fill,g_auto__c_scale,w_420.webp 420w,
+        img/second_film_2.0_u4nwr7_ar_1_1,c_fill,g_auto__c_scale,w_512.webp 512w">
+        <img
+        sizes="(max-width: 1600px) 40vw, 640px"
+        srcset="
+         img/second_film_2.0_u4nwr7_c_scale,w_308.webp 308w,
+         img/second_film_2.0_u4nwr7_c_scale,w_509.webp 509w,
+         img/second_film_2.0_u4nwr7_c_scale,w_593.webp 593w,
+         img/second_film_2.0_u4nwr7_c_scale,w_640.webp 640w"
+        src="img/second_film_2.0_u4nwr7_c_scale,w_640.webp"
+        alt="">
+        </picture>
       </div>
 
     </main>
 
     <footer>
+
+      <nav class="nav_horizontal">
+        <ul>
+          <li><a href="presentacion.html"><strong>Presentación</strong></a></li>
+          <li><a href="categoria.html"><strong>Categoría</strong></a></li>
+          <li><a href="enlaces.html"><strong>Enlaces</strong></a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="index.html" class="link_index"><img class="lazyload logo" src="img/logo_footer.png" alt="Logo"></a>
+      </div>
+
       <p>
-        Actividad realizada por Ferran Roig Muñoz, para la asignatura
-        HTML y CSS II. Primer semestre del curso 2022-2023
+      Actividad realizada por Ferran Roig Muñoz, para la asignatura
+      HTML y CSS II. Primer semestre del curso 2022-2023
       </p>
+
     </footer>
 
     <script src="../node_modules/lazysizes/lazysizes.min.js" async=""></script>

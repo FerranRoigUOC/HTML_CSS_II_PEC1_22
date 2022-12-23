@@ -8,22 +8,51 @@
   </head>
   <body>
     <header>
-      <div class="margin_header"> 
-				<a href="index.html" class="link_index"><h1>SAM</h1></a>
-				<nav>
-					<ul>
-						<li><a href="presentacion.html"><strong>PRESENTACIÓN</strong></a></li>
-						<li><a href="categoria.html"><strong>CATEGORÍA</strong></a></li>
-						<li><a href="enlaces.html"><strong>ENLACES</strong></a></li>
-					</ul>
-				</nav>
-			</div>
+      <div class="margin_header">
+          <div class="header_container">
+            <a href="index.html" class="link_index"><h1>SAM</h1></a>
+        <img class="lazyload logo" src="img/logo_header.png" alt="Logo">
+          </div>
+      <nav>
+        <ul>
+          <li><a href="presentacion.html"><strong>PRESENTACIÓN</strong></a></li>
+          <li><a href="categoria.html"><strong>CATEGORÍA</strong></a></li>
+          <li><a href="enlaces.html"><strong>ENLACES</strong></a></li>
+        </ul>
+      </nav>
+    </div>
     </header>
 
     <main class="main">
       <h2>El Señor de los Anillos: la Comunidad del Anillo</h2>
       <div class="container_detail">
-        <img class="lazyload" src="img/filmone.jpg" alt="Film one">
+        <picture>
+          <source
+          media="(max-width: 767px)"
+          sizes="(max-width: 349px) 100vw, 349px"
+          srcset="
+          img/filmone_usyg4h_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+          img/filmone_usyg4h_ar_1_1,c_fill,g_auto__c_scale,w_349.jpg 349w">
+          <img
+          sizes="(max-width: 1550px) 40vw, 620px"
+          srcset="
+          img/filmone_usyg4h_c_scale,w_308.jpg 308w,
+          img/filmone_usyg4h_c_scale,w_564.jpg 564w,
+          img/filmone_usyg4h_c_scale,w_620.jpg 620w"
+          src="img/filmone_usyg4h_c_scale,w_620.jpg"
+          alt="">
+        </picture>
+
+        <picture class="second_picture">
+        <img
+          sizes="(max-width: 300px) 100vw, 300px"
+          srcset="
+          img/film_one_2.0_khrqb2_c_scale,w_200.jpg 200w,
+          img/film_one_2.0_khrqb2_c_scale,w_300.jpg 300w"
+          src="img/film_one_2.0_khrqb2_c_scale,w_300.jpg"
+          alt="">
+        </picture>
+        
         <div class="grid_detail">
           <p>La Comunidad del Anillo es el primero de los tres títulos que componen el gran libro El Señor de los Anillos. 
             Así como comentaba en una entrada anterior que el Hobbit era un libro de aventuras fácil de leer, 
@@ -49,15 +78,47 @@
             pero siempre tiene a Merry cerca para ayudarle a salir de los problemas.
           </p>
         </div>
+
+        <picture>
+          <source
+          media="(max-width: 767px)"
+          sizes="(max-width: 556px) 100vw, 556px"
+          srcset="
+          img/frodo_sam_film_one_gac8a9_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+          img/frodo_sam_film_one_gac8a9_ar_1_1,c_fill,g_auto__c_scale,w_527.jpg 527w,
+          img/frodo_sam_film_one_gac8a9_ar_1_1,c_fill,g_auto__c_scale,w_556.jpg 556w">
+          <img
+          sizes="(max-width: 2475px) 40vw, 990px"
+          srcset="
+          img/frodo_sam_film_one_gac8a9_c_scale,w_308.jpg 308w,
+          img/frodo_sam_film_one_gac8a9_c_scale,w_679.jpg 679w,
+          img/frodo_sam_film_one_gac8a9_c_scale,w_976.jpg 976w,
+          img/frodo_sam_film_one_gac8a9_c_scale,w_990.jpg 990w"
+          src="img/frodo_sam_film_one_gac8a9_c_scale,w_990.jpg"
+          alt="">
+        </picture>
       </div>
 
     </main>
 
     <footer>
+
+      <nav class="nav_horizontal">
+        <ul>
+          <li><a href="presentacion.html"><strong>Presentación</strong></a></li>
+          <li><a href="categoria.html"><strong>Categoría</strong></a></li>
+          <li><a href="enlaces.html"><strong>Enlaces</strong></a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="index.html" class="link_index"><img class="lazyload logo" src="img/logo_footer.png" alt="Logo"></a>
+      </div>
+
       <p>
-        Actividad realizada por Ferran Roig Muñoz, para la asignatura
-        HTML y CSS II. Primer semestre del curso 2022-2023
+      Actividad realizada por Ferran Roig Muñoz, para la asignatura
+      HTML y CSS II. Primer semestre del curso 2022-2023
       </p>
+
     </footer>
 
     <script src="../node_modules/lazysizes/lazysizes.min.js" async=""></script>

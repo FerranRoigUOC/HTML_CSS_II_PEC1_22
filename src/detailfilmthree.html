@@ -8,22 +8,39 @@
   </head>
   <body>
     <header>
-      <div class="margin_header"> 
-				<a href="index.html" class="link_index"><h1>SAM</h1></a>
-				<nav>
-					<ul>
-						<li><a href="presentacion.html"><strong>PRESENTACIÓN</strong></a></li>
-						<li><a href="categoria.html"><strong>CATEGORÍA</strong></a></li>
-						<li><a href="enlaces.html"><strong>ENLACES</strong></a></li>
-					</ul>
-				</nav>
-			</div>
+      <div class="margin_header">
+          <div class="header_container">
+            <a href="index.html" class="link_index"><h1>SAM</h1></a>
+        <img class="lazyload logo" src="img/logo_header.png" alt="Logo">
+          </div>
+      <nav>
+        <ul>
+          <li><a href="presentacion.html"><strong>PRESENTACIÓN</strong></a></li>
+          <li><a href="categoria.html"><strong>CATEGORÍA</strong></a></li>
+          <li><a href="enlaces.html"><strong>ENLACES</strong></a></li>
+        </ul>
+      </nav>
+    </div>
     </header>
 
     <main class="main">
       <h2>El Señor de los Anillos: el retorno del Rey</h2>
       <div class="container_detail">
-        <img class="lazyload" src="img/filmthreesam.jpg" alt="Film three sam">
+        <picture>
+        <source
+        media="(max-width: 767px)"
+        sizes="(max-width: 360px) 100vw, 360px"
+        srcset="
+        img/filmthreesam_k70xxi_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,
+        img/filmthreesam_k70xxi_ar_1_1,c_fill,g_auto__c_scale,w_360.jpg 360w">
+        <img
+        sizes="(max-width: 1200px) 40vw, 480px"
+        srcset="
+        img/filmthreesam_k70xxi_c_scale,w_308.jpg 308w,
+        img/filmthreesam_k70xxi_c_scale,w_480.jpg 480w"
+        src="img/filmthreesam_k70xxi_c_scale,w_480.jpg"
+        alt="Film three sam">
+        </picture>
         <div class="grid_detail">
           <p>
             Luego de la victoria en la batalla del <a href="detailfilmtwo.html">Abismo de Helm</a>, el Rey de Rohan, junto a Gandalf, Aragorn, Legolas, Gimli y Éomer se dirigieron hacia Isengard,
@@ -60,16 +77,38 @@
             (palabras con las que también terminaba la novela), entran juntos en casa, y cierra la puerta.
           </p>
         </div>
-        <img class="lazyload" src="img/filmthreehobbits.jpg" alt="Film three sam">
+        <picture>
+          <img  
+            srcset="images/img/filmthreehobbits.jpg 320w,
+            img/filmthreehobbits.jpg 480w,
+            img/filmthreehobbits.jpg 800w"
+            sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+            src="img/filmthreehobbits.jpg" alt="Film three sam">
+        </picture>
       </div>
 
     </main>
 
     <footer>
+
+      <nav class="nav_horizontal">
+        <ul>
+          <li><a href="presentacion.html"><strong>Presentación</strong></a></li>
+          <li><a href="categoria.html"><strong>Categoría</strong></a></li>
+          <li><a href="enlaces.html"><strong>Enlaces</strong></a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="index.html" class="link_index"><img class="lazyload logo" src="img/logo_footer.png" alt="Logo"></a>
+      </div>
+
       <p>
-        Actividad realizada por Ferran Roig Muñoz, para la asignatura
-        HTML y CSS II. Primer semestre del curso 2022-2023
+      Actividad realizada por Ferran Roig Muñoz, para la asignatura
+      HTML y CSS II. Primer semestre del curso 2022-2023
       </p>
+
     </footer>
 
     <script src="../node_modules/lazysizes/lazysizes.min.js" async=""></script>
