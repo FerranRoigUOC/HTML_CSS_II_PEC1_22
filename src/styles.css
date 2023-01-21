@@ -105,7 +105,7 @@ header ul {
 	display: block;
 }
 
-iframe{
+.lite-youtube{
 	margin: auto;
 	display: block;
 	height: 300px;
@@ -230,7 +230,7 @@ iframe{
 		margin-right: 20px;
 	}
 
-	iframe{
+	.lite-youtube{
 		width: 100%;
 	}
 
@@ -347,7 +347,7 @@ iframe{
 		margin-right: 15%;
 	}
 
-	iframe{
+	.lite-youtube{
 		width: 60%;
 	}
 
