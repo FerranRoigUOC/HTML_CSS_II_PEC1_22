@@ -1,7 +1,11 @@
 :root {
 	--text-light-color: rgb(255, 255, 255);
 	--contrast-color: rgb(189, 55, 0);
-  }
+}
+
+@font-face {
+	font-display: swap;
+}
 
 body {
 	display: flex;
