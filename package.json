@@ -15,6 +15,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "lazysizes": "^5.3.2"
+    "lazysizes": "^5.3.2",
+    "lite-youtube-embed": "^0.2.0"
   }
 }

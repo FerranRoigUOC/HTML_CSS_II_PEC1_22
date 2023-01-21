@@ -5,11 +5,7 @@
     <meta charset="utf-8"/>
     <title>My First Parcel App</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./src/lite-yt-embed.css"/>
-    <link rel="preconnect" href="https://www.youtube-nocookie.com"/>
-    <link rel="preconnect" href="https://www.google.com"/>
-    <link rel="preconnect" href="https://googleads.g.doubleclick.net"/>
-    <link rel="preconnect" href="https://static.doubleclick.net"/>
+    <link rel="stylesheet" href="../node_modules/lite-youtube-embed/src/lite-yt-embed.css" />
   </head>
   <body>
     <header>
@@ -49,13 +45,13 @@
         </div>
 
         <figure>
-          <iframe async frameborder="0"
-          class="lazyload"
-          allowfullscreen="" src="https://www.youtube.com/embed/hal7_K48bD4"></iframe>
+          <lite-youtube videoid="hal7_K48bD4" style="background-image: url('https://i.ytimg.com/vi/hal7_K48bD4/hqdefault.jpg');"></lite-youtube>
           <figcaption>
             <p><i><strong>Hobbits.</strong></i> Sam</figcaption></p>
           </figcaption>
         </figure>
+
+        
 
       </div>
 
@@ -82,6 +78,7 @@
     </footer>
 
     <script async src="../node_modules/lazysizes/lazysizes.min.js" async=""></script>
+    <script src="../node_modules/lite-youtube-embed/src/lite-yt-embed.js"></script>
 
   </body>
 </html>
